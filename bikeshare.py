@@ -43,6 +43,7 @@ def get_filters():
     userinput = input('please input the number of the month you want to view (i.e. January = 1) if you want to view all input 0:')
     monthlist = ["all", "january", "february", "march", "april", "june", "july", "august", "september", "october", "november", "december"]
     gate = 0
+    testgate = 0
     #loop to make sure the input is an integer
     while gate == 0:
         if userinput.isnumeric() == False:
