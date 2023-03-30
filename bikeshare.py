@@ -200,7 +200,7 @@ def station_stats(city, month, day):
     #find the count
     mccombocount = filedf['trip'].value_counts().max()
     
-    
+    #decide whether test is passed and which output to provide
     if filterint != 1:
         #display
         print(f"The most common starting station is {mcstart} with a count of {mcstartcount}")
