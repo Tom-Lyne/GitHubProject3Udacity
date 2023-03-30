@@ -151,7 +151,7 @@ def time_stats(city, month, day):
     #get the count of the most common
     mchcount = filedf['hour'].value_counts().max()
     print(f"The most common starting hour is {mch} with a count of {mchcount}")
-
+    #print out the time taken
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 #working - done
