@@ -175,6 +175,7 @@ def station_stats(city, month, day):
         #remove the 0 value
         position = position + 1
         #filter the dataframe
+        #test
         filedf = filedf[filedf['Start Time'].dt.month == position]
         filterint = 1
     if day != 'all':
