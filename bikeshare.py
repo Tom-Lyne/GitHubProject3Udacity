@@ -157,7 +157,7 @@ def time_stats(city, month, day):
 #working - done
 def station_stats(city, month, day):
     """Displays statistics on the most popular stations and trip."""
-
+    #print the output
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     filedf = pd.read_csv(f"{city}.csv")
