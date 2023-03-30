@@ -157,7 +157,7 @@ def time_stats(city, month, day):
 #working - done
 def station_stats(city, month, day):
     """Displays statistics on the most popular stations and trip."""
-
+    #print the output
     print('\nCalculating The Most Popular Stations and Trip...\n')
     start_time = time.time()
     filedf = pd.read_csv(f"{city}.csv")
@@ -200,7 +200,7 @@ def station_stats(city, month, day):
     #find the count
     mccombocount = filedf['trip'].value_counts().max()
     
-    
+    #decide whether test is passed and which output to provide
     if filterint != 1:
         #display
         print(f"The most common starting station is {mcstart} with a count of {mcstartcount}")
@@ -212,7 +212,7 @@ def station_stats(city, month, day):
         print(f"The most common trip is (stations seperated by '---->'): {mccombo} with a count of {mccombocount}")
         print(f"The most commonly used end station is {mcend} with a count of {mcendcount}")
 
-
+    #print out the time taken
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 #working - done
