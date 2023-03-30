@@ -212,7 +212,7 @@ def station_stats(city, month, day):
         print(f"The most common trip is (stations seperated by '---->'): {mccombo} with a count of {mccombocount}")
         print(f"The most commonly used end station is {mcend} with a count of {mcendcount}")
 
-
+    #print out the time taken
     print("\nThis took %s seconds." % (time.time() - start_time))
     print('-'*40)
 #working - done
