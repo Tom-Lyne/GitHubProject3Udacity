@@ -90,6 +90,7 @@ def time_stats(city, month, day):
 
     print('\nCalculating The Most Frequent Times of Travel...\n')
     start_time = time.time()
+    new_test = 0
     #read in the csv to a dataframe
     filedf = pd.read_csv(f"{city}.csv")
     monthsinyear = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december']
